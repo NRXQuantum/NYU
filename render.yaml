@@ -7,6 +7,9 @@ services:
     dockerfilePath: ./Dockerfile
 
     envVars:
+      - key: PORT
+        value: "10000"
+
       - key: HERMES_DASHBOARD
         value: "1"
 
@@ -23,18 +26,6 @@ services:
         generateValue: true
 
       - key: HERMES_DASHBOARD_BASIC_AUTH_SECRET
-        generateValue: true
-
-      - key: API_SERVER_ENABLED
-        value: "true"
-
-      - key: API_SERVER_HOST
-        value: "0.0.0.0"
-
-      - key: API_SERVER_PORT
-        value: "8642"
-
-      - key: API_SERVER_KEY
         generateValue: true
 
     disk:
