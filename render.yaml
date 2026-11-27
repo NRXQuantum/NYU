@@ -3,7 +3,7 @@ services:
   - type: web
     name: hermes-agent
     runtime: docker
-    plan: starter
+    plan: standard
     dockerfilePath: ./Dockerfile
 
     envVars:
